@@ -5,16 +5,15 @@ function App() {
   const [showOtherInput, setShowOtherInput] = useState(false);
   const [selectedLocations, setSelectedLocations] = useState([]);
 
-  // State variables for form fields
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
   const [email, setEmail] = useState('');
   const [contact, setContact] = useState('');
   const [contactError, setContactError] = useState('');
   const [selectedOption, setSelectedOption] = useState('');
-  const [experience, setExperience] = useState(''); // State for experience
+  const [experience, setExperience] = useState(''); 
 
-  // Check if all required fields are filled
+
   const isFormValid = () => {
     return (
       firstName &&
@@ -23,7 +22,7 @@ function App() {
       contact &&
       !contactError &&
       selectedOption &&
-      experience && // Check if experience is selected
+      experience && 
       selectedLocations.length > 0
     );
   };
@@ -45,10 +44,7 @@ function App() {
 
   const handleContactChange = (event) => {
     const value = event.target.value;
-    // Update contact value
     setContact(value);
-
-    // Check if contact contains any alphabets
     if (/[a-zA-Z]/.test(value)) {
       setContactError('Contact number should only contain digits.');
     } else {
@@ -65,7 +61,7 @@ function App() {
     setSelectedOption('');
     setSelectedLocations([]);
     setShowOtherInput(false);
-    setExperience(''); // Clear the experience selection
+    setExperience(''); 
   };
 
   return (
