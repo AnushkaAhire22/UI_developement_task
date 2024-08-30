@@ -1,3 +1,43 @@
+Your task is to create a dynamic form generator application using React.js. The application should allow users to create custom forms with various types of form fields, such as text inputs, dropdowns, checkboxes, and radio buttons.
+
+
+Functionalities :
+1)Email validation
+2)Conatct no validation
+3)Submit only if all the fields are filled
+UI:
+1)Dropdown Menu
+2)Radio Buttons
+3)MultpleSelect buttons
+4)Reset or clear form buttons
+
+
+Here are the scrrenshots:
+
+
+
+1) Page Layout(Submit Button is not active bcz form is incomplete)
+![image](https://github.com/user-attachments/assets/4b07769a-9b6c-4263-acca-4797358f35f2)
+
+
+2)Login Form with Email Validation
+
+![image](https://github.com/user-attachments/assets/e9189bf9-31b5-4b98-8618-ccb049b302a7)
+
+3) Contact No validation
+   ![image](https://github.com/user-attachments/assets/08b1636a-6778-4b31-a9e3-71987addbf17)
+
+4) Dropdown menu and active radio button
+   ![image](https://github.com/user-attachments/assets/7163affd-1398-47bf-8475-6869b630ee34)
+5)If other is selected, filed to write the desired role is opening,
+![image](https://github.com/user-attachments/assets/02c3e33b-aadb-411c-b69f-ec397f70a498)
+
+6)Submit button is active after checking all the fileds are correctly filled.
+![Uploading image.png…]()
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
