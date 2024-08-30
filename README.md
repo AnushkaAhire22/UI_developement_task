@@ -12,9 +12,7 @@ UI:
 4)Reset or clear form buttons
 
 
-Here are the scrrenshots:
-
-
+Here are the screenshots:
 
 1) Page Layout(Submit Button is not active bcz form is incomplete)
 ![image](https://github.com/user-attachments/assets/4b07769a-9b6c-4263-acca-4797358f35f2)
@@ -32,8 +30,9 @@ Here are the scrrenshots:
 5)If other is selected, filed to write the desired role is opening,
 ![image](https://github.com/user-attachments/assets/02c3e33b-aadb-411c-b69f-ec397f70a498)
 
-6)Submit button is active after checking all the fileds are correctly filled.
-![Uploading image.png…]()
+6)Submit button is active after checking all the fields are correctly filled.
+![image](https://github.com/user-attachments/assets/11fe531b-e200-4f6a-a35d-f98fbcedfff5)
+
 
 
 
