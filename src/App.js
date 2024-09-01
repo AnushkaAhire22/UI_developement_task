@@ -152,8 +152,8 @@ function App() {
             <div className="dropdown-group">
               <select
                 className="dropdown"
-                value={experience} // Bind the experience state to the dropdown
-                onChange={(e) => setExperience(e.target.value)} // Update state on change
+                value={experience} 
+                onChange={(e) => setExperience(e.target.value)} 
               >
                 <option value="" disabled>
                   Select your experience
