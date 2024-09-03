@@ -13,7 +13,6 @@ function App() {
   const [selectedOption, setSelectedOption] = useState('');
   const [experience, setExperience] = useState(''); 
 
-
   const isFormValid = () => {
     return (
       firstName &&
@@ -44,7 +43,10 @@ function App() {
 
   const handleContactChange = (event) => {
     const value = event.target.value;
+
     setContact(value);
+
+
     if (/[a-zA-Z]/.test(value)) {
       setContactError('Contact number should only contain digits.');
     } else {
@@ -111,36 +113,41 @@ function App() {
               onChange={handleContactChange}
             />
             {contactError && <p className="error-message">{contactError}</p>}
+            
 
             <div className="radio-group">
-              <label>
-                <input
-                  type="radio"
-                  name="option"
-                  value="Option1"
-                  onChange={handleRadioChange}
-                />
-                Front-End
-              </label>
-              <label>
-                <input
-                  type="radio"
-                  name="option"
-                  value="Option2"
-                  onChange={handleRadioChange}
-                />
-                Backend
-              </label>
-              <label>
-                <input
-                  type="radio"
-                  name="option"
-                  value="Other"
-                  onChange={handleRadioChange}
-                />
-                Other
-              </label>
-            </div>
+  <label>
+    <input
+      type="radio"
+      name="option"
+      value="Option1"
+      checked={selectedOption === 'Option1'} 
+      onChange={handleRadioChange}
+    />
+    Front-End
+  </label>
+  <label>
+    <input
+      type="radio"
+      name="option"
+      value="Option2"
+      checked={selectedOption === 'Option2'} 
+      onChange={handleRadioChange}
+    />
+    Backend
+  </label>
+  <label>
+    <input
+      type="radio"
+      name="option"
+      value="Other"
+      checked={selectedOption === 'Other'} 
+      onChange={handleRadioChange}
+    />
+    Other
+  </label>
+</div>
+
             {showOtherInput && (
               <input
                 type="text"
@@ -148,6 +155,7 @@ function App() {
                 className="other-input"
               />
             )}
+
 
             <div className="dropdown-group">
               <select
