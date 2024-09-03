@@ -24,7 +24,7 @@
   padding-bottom: 2rem;
 }
 
-@media (min-width:auto) {
+@media (min-width: 768px) {
   .left-section {
     padding-bottom: 0;
     padding-right: 3rem;
@@ -49,7 +49,6 @@
   box-shadow: 0px 8px 32px rgb(0, 0, 0);
   width: 100%;
   max-width: 850px;
-  
   box-sizing: content-box;
 }
 
@@ -59,16 +58,18 @@
   }
 }
 
-/*Title and Description */
+/* Title and Description */
 .title {
   font-size: 2.5rem;
   font-weight: 700;
   line-height: 1.2;
+  text-align: center; 
 }
 
 @media (min-width: 768px) {
   .title {
     font-size: 3rem;
+    text-align: left; 
   }
 }
 
@@ -80,14 +81,15 @@
   color: hsl(0, 0%, 100%);
   margin-top: 1rem;
   font-style: italic;
-  font-family:'Times New Roman', Times, serif;
-  
+  font-family: 'Times New Roman', Times, serif;
   font-size: small;
+  text-align: center; 
 }
 
 @media (min-width: 768px) {
   .description {
     font-size: 1.2rem;
+    text-align: left;
   }
 }
 
@@ -124,7 +126,7 @@
   }
 }
 
-/* Stream Other than FE and BE */
+/* Stream Other than Front E and Back E */
 .other-input {
   margin-left: 0;
   padding: 0.75rem;
@@ -157,23 +159,23 @@
   border: 1px solid rgba(255, 255, 255, 0.3);
   padding: 0.5rem 1rem;
   border-radius: 8px;
-  cursor: pointer;
+  cursor:pointer;
   color: hsl(0, 0%, 100%);
   transition: background-color 0.3s ease;
 }
 
 .multi-select-group .checkbox-label.checked {
-  background-color: #1455bc; /* Dark blue when checked */
+  background-color: #1455bc;
   color: white;
-  border: 1px solid #1455bc; /* Match the border with background when checked */
+  border: 1px solid #1455bc;
 }
 
 .multi-select-group .checkbox-label.checked:hover {
-  background-color: #3a5c9d; /* Darker blue on hover when checked */
+  background-color: #3a5c9d;
 }
 
 .multi-select-group .checkbox-label input[type="checkbox"] {
-  display: none; /* Hide the default checkbox */
+  display: none;
 }
 
 /* 6. Buttons */
@@ -185,9 +187,9 @@
   color: white;
   font-weight: bold;
   border-radius: 8px;
-  border:#042d6e;
+  border: #042d6e;
   margin-bottom: 1rem;
-  cursor: not-allowed; /* no cursor will appear for disable */
+  cursor: not-allowed;
   transition: background-color 0.3s ease;
 }
 
@@ -197,25 +199,20 @@
 }
 
 .btn-primary.active:hover {
-  background-color: #031f51; 
+  background-color: #031f51;
 }
 
 .btn-secondary {
   width: 100%;
   padding: 0.75rem;
-  background-color: #4f7bb1; 
+  background-color: #4f7bb1;
   border-color: rgb(1, 9, 17);
   color: white;
   font-weight: bold;
   border-radius: 8px;
-  border:#042d6e;
+  border: #042d6e;
   margin-bottom: 1rem;
   transition: background-color 0.3s ease;
-}
-
-.btn-secondary {
-  background-color: #0a4098d4;
-  cursor: pointer;
 }
 
 .btn-secondary:hover {
@@ -254,10 +251,11 @@
   border: 1px solid #ccc;
   background-color: white;
   box-sizing: border-box;
-  appearance: none; 
+  appearance: none;
 }
 
 .dropdown:focus {
   outline: none;
   border-color: #1266f1;
 }
+
